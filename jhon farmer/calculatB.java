@@ -1,27 +1,53 @@
+/*@Author: Elianny Arias
+  @Date: 11/10/2016
+  @file name: calculatB.java
+  */
+
 public class calculatB
 {
-
-int eggs;
-int boxes;
-int leftover;
-
-
+//data members
+private int eggs;
+private int boxes=0;
+private int leftover=0;
 
 
-public int boxes (int eggs)
+//Constructor
+public calculatB()
 {
-boxes=eggs/12;
+	eggs=0;
 
-return boxes;
+}
+     //Set Methods
+	public void setEggs(int eggs)
+	{
+      this.eggs=eggs;
+
+     }
+
+
+       //Compute how many boxes
+       public void computeB ()
+       {
+	      boxes=eggs/12;
+       }
+
+      //Compute how many left over
+	  public void computeL ()
+
+	  {
+		  leftover=eggs%12;
+
+	  }
+//Return boxes value
+public int getBoxes()
+{
+	return boxes;
 }
 
-public int leftover(int eggs)
+//return leftover value
+public int getLeftover()
 {
-
-leftover=eggs%12;
-
-return leftover;
-
+	return leftover;
 }
 
 }
